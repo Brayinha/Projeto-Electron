@@ -1,1 +1,1 @@
-SELECT * FROM fastdicionary.dicionario;
+SELECT * FROM fastdicionary.dica;
