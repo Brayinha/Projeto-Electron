@@ -29,19 +29,20 @@
         <div class="row">
             <div class="col-lg-12">
             <div class="d-flex justify-content-center">
-                <form>
+            <form action="inserir.php" method="POST">
                     <div class="form-group">
                         <label for="palavra"><h4>Palavra</h4></label>
-                        <input type="text" class="form-control" id="palavra">
+                        <input type="text" class="form-control" id="palavra" name="palavra">
 
                         <label for="significado"><h4>Significado</h4></label>
-                        <input type="text" class="form-control" id="significado">
+                        <input type="text" class="form-control" id="significado" name="significado">
 
                         <label for="exemplo"><h4>exemplo</h4></label>
-                        <input type="text" class="form-control" id="exemplo">   
+                        <input type="text" class="form-control" id="exemplo"name="exemplo">   
                         
                         <label for="classe"><h4>Classe Gramatical</h4></label>
-                        <input type="text" class="form-control" id="classe">
+                        <input type="text" class="form-control" id="classe" name="classe">
+                        <input type="submit" value="Cadastrar" name="btn_gerar">
 
                     </div>
                 </form>       
@@ -52,3 +53,5 @@
 
 </body>
 </html>
+
+
