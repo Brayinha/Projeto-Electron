@@ -46,8 +46,8 @@
                         <nav class="header__menu mobile-menu">
                             <ul>
                                 <li class="active"><a href="./index.html">Home</a></li>
-                                <li><a href="./listing.html">Dicas</a></li>
-                                <li><a href="#footer">Sobre</a>
+                                <li><a href="#dicas">Dicas</a></li>
+                                <li><a href="#sobre">Sobre</a>
                                     <ul class="dropdown">
                                         <li><a href="./blog-details.html">Detalhes</a></li>
                                         <li><a href="./contact.html">Contato</a></li>
@@ -84,7 +84,7 @@
                     <div class="input-group input-group-lg col-8">
                         <input type="text" class="form-control" placeholder=" " aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <div class="input-group-append">
-                            <button type="button" class="btn btn-danger">Pesquisar</button>
+                            <button type="button" class="btn btn-danger"  type="button" onclick="Mudarestado('minhaDiv')">Pesquisar</button>
                         </div>
                     </div>
                     </div>
@@ -94,9 +94,20 @@
     </section>
     <!-- Hero Section End -->
 
+<script>
+    function Mudarestado(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "none")
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
+</script>
+
+
     <!-- Container da palavra -->
     <section class="categories spad">
-        <div class="container">
+        <div class="container" id="minhaDiv">
             <div class="row">
                 <div class="col-lg-12">
                         <h2 class="text-align:left">Home <p>Substantivo (plural: Homes)</p></h2>  
@@ -116,7 +127,7 @@
 
     <!-- dicas inicio sessão -->
     <section class="most-search spad">
-        <div class="container">
+        <div class="container" id="dicas">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
@@ -141,7 +152,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">
-                                    Reading
+                                    Speaking
                                 </a>
                             </li>
     
@@ -166,7 +177,7 @@
                                                 </ul>
                                             </div>
                                             <div class="listing__item__text__info">
-                                                <div class="p-3 mb-2 bg-danger text-white font-weight-bold">Básico</div>
+                                                <div class="p-3 mb-2 bg-danger text-white font-weight-bold text-center">Básico</div>
                                             </div>
                                         </div>
                                     </div>
@@ -186,7 +197,7 @@
                                                 </ul>
                                             </div>
                                             <div class="listing__item__text__info">
-                                                <div class="p-3 mb-2 bg-warning text-white font-weight-bold">Intermediário</div>
+                                                <div class="p-3 mb-2 bg-warning text-white font-weight-bold text-center">Intermediário</div>
                                             </div>
                                         </div>
                                     </div>
@@ -206,7 +217,7 @@
                                                 </ul>
                                             </div>
                                             <div class="listing__item__text__info">
-                                                <div class="p-3 mb-2 bg-info text-white font-weight-bold">Avançado</div>
+                                                <div class="p-3 mb-2 bg-info text-white font-weight-bold text-center">Avançado</div>
                                             </div>
                                         </div>
                                     </div>
@@ -219,38 +230,24 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-6">
                                     <div class="listing__item">
-                                        <div class="embed-responsive embed-responsive-4by3">
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VL363_dpaHc"></iframe>
-                                        </div>
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VL363_dpaHc"></iframe>
+                                            </div>
                                         <div class="listing__item__text">
                                             <div class="listing__item__text__inside">
-                                                <h5>Chinese Sausage Restaurant</h5>
+                                                <h5>Melhore sua pronuncia</h5>
                                                 <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
                                                 </div>
                                                 <ul>
-                                                    <li><span class="icon_pin_alt"></span> 236 Littleton St. New
-                                                        Philadelphia, Ohio, United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
+                                                    sons das palavras,consoantes e vogais<br><br><br>
                                                 </ul>
                                             </div>
                                             <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-1.png" alt="">
-                                                    <span>Restaurant</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right">Open Now</div>
+                                                <div class="p-3 mb-2 bg-info text-white font-weight-bold text-center">Avançado</div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> 
                             </div>
                         </div>
 
@@ -259,38 +256,24 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-6">
                                     <div class="listing__item">
-                                        <div class="embed-responsive embed-responsive-4by3">
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VL363_dpaHc"></iframe>
-                                        </div>
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VL363_dpaHc"></iframe>
+                                            </div>
                                         <div class="listing__item__text">
                                             <div class="listing__item__text__inside">
-                                                <h5>Sweet and sour pork ribs</h5>
+                                                <h5>Melhore sua pronuncia</h5>
                                                 <div class="listing__item__text__rating">
-                                                    <div class="listing__item__rating__star">
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star"></span>
-                                                        <span class="icon_star-half_alt"></span>
-                                                    </div>
-                                                    <h6>$40 - $70</h6>
                                                 </div>
                                                 <ul>
-                                                    <li><span class="icon_pin_alt"></span> 251 Wiley St. Forks,
-                                                        Washington(WA), United States</li>
-                                                    <li><span class="icon_phone"></span> (+12) 345-678-910</li>
+                                                    sons das palavras,consoantes e vogais<br><br><br>
                                                 </ul>
                                             </div>
                                             <div class="listing__item__text__info">
-                                                <div class="listing__item__text__info__left">
-                                                    <img src="img/listing/list_small_icon-1.png" alt="">
-                                                    <span>Restaurant</span>
-                                                </div>
-                                                <div class="listing__item__text__info__right">Open Now</div>
+                                                <div class="p-3 mb-2 bg-info text-white font-weight-bold text-center">Avançado</div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> 
                             </div>
                         </div>
 
@@ -304,7 +287,7 @@
 
 <!-- inicio rodapé-->
 <footer class="footer">
-    <div class="container">
+    <div class="container" id="sobre">
         <div class="row">
             <div class="col-lg-3 col-md-6">
                 <div class="footer__about">
@@ -318,16 +301,12 @@
                 <div class="footer__address">
                     <ul>
                         <li>
-                            <span>Call Us:</span>
-                            <p>(+12) 345-678-910</p>
+                            <span>Telefone:</span>
+                            <p>(12) 8888-0000</p>
                         </li>
                         <li>
                             <span>Email:</span>
-                            <p>info.colorlib@gmail .com</p>
-                        </li>
-                        <li>
-                            <span>Fax:</span>
-                            <p>(+12) 345-678-910</p>
+                            <p>fastdic@gmail .com</p>
                         </li>
                         <li>
                             <span>Nossas Redes sociais:</span>
@@ -345,17 +324,9 @@
                 <div class="footer__widget">
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">How it work</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Sign In</a></li>
-                        <li><a href="#">How it Work</a></li>
-                        <li><a href="#">Advantages</a></li>
-                        <li><a href="#">Direo App</a></li>
-                        <li><a href="#">Packages</a></li>
+                        <li><a href="#">Suporte</a></li>
+                        <li><a href="#">Como usar</a></li>
+                        <li><a href="#">Contato</a></li>
                     </ul>
                 </div>
             </div>
