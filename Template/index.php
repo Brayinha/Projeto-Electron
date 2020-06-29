@@ -94,7 +94,7 @@
                 <div class="col-lg-12 d-flex justify-content-center">
                     <div class="input-group input-group-lg col-8">
                         
-                        <input type="text" class="form-control" placeholder=" " aria-label="Recipient's username" aria-describedby="basic-addon2" name="pesquisa">
+                        <input type="text" class="form-control" placeholder=" " aria-label="Recipient's username" aria-describedby="basic-addon2" name="pesquisa" list="palavras">
                            <datalist id="palavras">
                            <?php 
                                $query = "SELECT palavra FROM fastdicionary.dicionario";
@@ -104,13 +104,14 @@
                                foreach ($result as $row) {
                                  echo '<option value = "'.$row['palavra'].'">';
                                }
+
                            
                            ?>
+                            </datalist>
                         <div class="input-group-append">
                             <!--<button type="button" class="btn btn-danger"  type="button" onclick="Mudarestado('palavradiv')">Pesquisar</button>-->
                             <a href="#palavradiv" class="btn btn-danger" type="button" onclick="Mudarestado('palavradiv')" name="search">Pesquisar</a>
                         </div>
-                        </datalist>
                     </div>
                     </div>
 
