@@ -94,7 +94,7 @@
                 <div class="col-lg-12 d-flex justify-content-center">
                     <div class="input-group input-group-lg col-8">
                         
-                        <input type="text" class="form-control" placeholder=" " aria-label="Recipient's username" aria-describedby="basic-addon2" name="pesquisa" list="palavras">
+                        <input type="text" class="form-control" placeholder=" " aria-label="Recipient's username" aria-describedby="basic-addon2" name="pesquisa" list="palavras" method="POST" action="#">
                            <datalist id="palavras">
                            <?php 
                                $query = "SELECT palavra FROM fastdicionary.dicionario";
@@ -129,6 +129,29 @@
             document.getElementById(el).style.display = 'none';
     }
 </script>
+
+<!--teste exibir pesquisa-->
+
+<?php
+$servidor = "localhost";
+$usuario = "root";
+$senha = "";
+$dbname = "/banco/";
+$conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
+
+$pesquisar = $_POST['pesquisa'];
+$result = "SELECT * FROM /tabela/ WHERE login LIKE '%$pesquisar%' LIMIT 5";
+$resultado = mysqli_query($conn, $result);
+
+while($rows = mysql_fetch_array($resultado)){
+    echo $rows['/coluna/'];
+}
+
+
+
+?>
+
+<!-- fim teste exibir pesquisa-->
 
 
     <!-- Container da palavra -->
